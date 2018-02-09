@@ -1,0 +1,126 @@
+# Group Employees
+
+## Departments [/api/departments/{?name}]
+
++ Parameters
+
+    + name: `Technology` (string, optional) - Filter the results by the name of the department.
+
+### List [GET]
+
++ Response 200 (application/json)
+
+    + Attributes (array)
+        + (Department GET)
+        + (Department GET)
+        + (Department GET)
+
+### Create [POST]
+
++ Request (application/json)
+
+    + Attributes (Department POST)
+
++ Response 200 (application/json)
+
+    + Attributes (Department GET)
+
+## Department [/api/departments/{id}/]
+
++ Parameters
+
+    + id: `1` (number, required) - Department Identifier
+
+
+### Detail [GET]
+
++ Response 200 (application)
+
+    + Attributes (Department GET)
+
+### Update [PUT]
+
++ Request (application/json)
+
+    + Attributes (Department PUT)
+
++ Response 200 (application/json)
+
+    + Attributes (Department GET)
+
+### Partial Update [PATCH]
+
++ Request (application/json)
+
+    + Attributes (Department PATCH)
+
++ Response 200 (application/json)
+
+    + Attributes (Department GET)
+
+### Remove [DELETE]
+
++ Response 204 (application/json)
+
+## Employees [/api/employees/{?name,email,department}]
+
++ Parameters
+
+    + name: `José` (string, optional) - Filter employees by name.
+    + email: `jose@gmail.com` (string, optional) - Filter employees by email.
+    + department: `1` (number, optional) - Filter results by employees which belong to specified department.
+
+### List [GET]
+
++ Response 200 (application/json)
+
+    + Attributes (array)
+        + (Employee GET)
+        + (Employee GET)
+        + (Employee GET)
+
+### Create [POST]
+
++ Request (application/json)
+
+    + Attributes (Employee POST)
+
++ Response 200 (application/json)
+
+    + Attributes (Employee GET)
+
+## Employee [/api/employees/{id}/]
+
++ Parameters
+
+    + id: `1` (number, required) - Employee ID
+
+### Detail [GET]
+
++ Response 200 (application/json)
+
+    + Attributes (Employee GET)
+
+### Update [PUT]
+
++ Request (application/json)
+
+    + Attributes (Employee PUT)
+
++ Response 200 (application/json)
+
+    + Attributes (Employee GET)
+
+### Partial Update [PATCH]
+
++ Request (application/json)
+
+    + Attributes (Employee PATCH)
+
++ Response 200 (application/json)
+
+    + Attributes (Employee GET)
+
+### Remove [DELETE]
+
++ Response 204 (application/json)
