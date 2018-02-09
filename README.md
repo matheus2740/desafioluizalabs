@@ -50,7 +50,7 @@ Go to `http://localhost:8000/api` and login at the top right corner.
 
 The API Blueprint is a format for specifying APIs, available as a superset of markdown. Any markdown rendered should be able to read the doc, but for best results use the NPM package `aglio`.
 
-A pre-rendered is also available as HTML.
+A pre-rendered version is also available as HTML (docs/docs.html).
 
 # CODING, FRAMEWORK AND STYLE NOTES:
 
